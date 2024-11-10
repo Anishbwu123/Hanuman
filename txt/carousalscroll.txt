@@ -1,0 +1,143 @@
+import React, {Profiler, useRef} from 'react';
+import {
+  Animated,
+  FlatList,
+  View,
+  Text,
+  Image,
+  Dimensions,
+  StyleSheet,
+} from 'react-native';
+
+const {width} = Dimensions.get('window');
+const SPACING = 10;
+const ITEM_WIDTH = width * 0.8;
+const ITEM_HEIGHT = ITEM_WIDTH * 1.5; // Adjust for aspect ratio
+
+const data = [
+  {
+    id: '1',
+    title: 'Landscape Photography of Snowy Mountain',
+    author: 'Eberhard Grossgasteiger',
+    image: require('../../Images/spidey.png'),
+  },
+  {
+    id: '2',
+    title: 'Another Mountain',
+    author: 'Photographer Name',
+    image: require('../../Images/boat.png'),
+  },
+  {
+    id: '3',
+    title: 'Another Mountain',
+    author: 'Photographer Name',
+    image: require('../../Images/fire.jpg'),
+  },
+  {
+    id: '4',
+    title: 'Another Mountain',
+    author: 'Photographer Name',
+    image: require('../../Images/mountain.jpg'),
+  },
+  {
+    id: '5',
+    title: 'Another Mountain',
+    author: 'Photographer Name',
+    image: require('../../Images/ram.png'),
+  },
+  
+];
+
+const Profile = () => {
+  const scrollX = useRef(new Animated.Value(0)).current;
+
+  return (
+    <View style={styles.container}>
+      <Animated.FlatList
+        data={data}
+        keyExtractor={item => item.id}
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        snapToInterval={ITEM_WIDTH + SPACING * 2}
+        decelerationRate="fast"
+        bounces={false}
+        onScroll={Animated.event(
+          [{nativeEvent: {contentOffset: {x: scrollX}}}],
+          {useNativeDriver: true},
+        )}
+        contentContainerStyle={{paddingHorizontal: SPACING}}
+        renderItem={({item, index}) => {
+          const inputRange = [
+            (index - 1) * (ITEM_WIDTH + SPACING * 2),
+            index * (ITEM_WIDTH + SPACING * 2),
+            (index + 1) * (ITEM_WIDTH + SPACING * 2),
+          ];
+
+          const scale = scrollX.interpolate({
+            inputRange,
+            outputRange: [0.9, 1, 0.9],
+            extrapolate: 'clamp',
+          });
+
+          const opacity = scrollX.interpolate({
+            inputRange,
+            outputRange: [0.5, 1, 0.5],
+            extrapolate: 'clamp',
+          });
+
+          return (
+            <View style={{width: ITEM_WIDTH}}>
+              <Animated.View
+                style={[styles.card, {transform: [{scale}], opacity}]}>
+                <Image
+                  source={
+                    typeof item.image === 'string'
+                      ? {uri: item.image} // For remote images
+                      : item.image // For local images (e.g., require('./path/to/image.png'))
+                  }
+                  style={styles.image}
+                />
+                <Text style={styles.author}>{item.author}</Text>
+                <Text style={styles.title}>{item.title}</Text>
+              </Animated.View>
+            </View>
+          );
+        }}
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop:45
+  },
+  card: {
+    marginHorizontal: SPACING,
+    padding: SPACING,
+    borderRadius: 16,
+    backgroundColor: 'white',
+    alignItems: 'center',
+  },
+  image: {
+    width: '100%',
+    height: ITEM_HEIGHT,
+    borderRadius: 16,
+  },
+  author: {
+    marginTop: 10,
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+  title: {
+    fontSize: 12,
+    color: 'gray',
+    textAlign: 'center',
+    marginTop: 5,
+  },
+});
+
+export default Profile;

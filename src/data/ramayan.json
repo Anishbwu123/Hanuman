@@ -1,0 +1,84 @@
+{
+    "RamayanaScenes": [
+      {
+        "scene": "Birth of Rama",
+        "description": "King Dasharatha of Ayodhya performs a sacred ritual to have children, leading to the birth of four sons: Rama, Bharata, Lakshmana, and Shatrughna.",
+        "characters": ["Dasharatha", "Rama", "Bharata", "Lakshmana", "Shatrughna"],
+        "part": "Bala Kanda",
+        "image": "https://i.pinimg.com/564x/f0/09/52/f009523169c769f6205248831cf5a4dc.jpg"
+      },
+      {
+        "scene": "Sage Vishwamitra's Visit",
+        "description": "Sage Vishwamitra seeks Rama's help to protect his rituals from demons. Dasharatha hesitantly agrees, and Rama, accompanied by Lakshmana, goes with the sage.",
+        "characters": ["Vishwamitra", "Rama", "Lakshmana", "Dasharatha"],
+        "part": "Bala Kanda"
+        ,
+        "image": "https://i.pinimg.com/564x/5f/11/20/5f1120380eb5dbaaf3f373cd640f6f2d.jpg"
+      },
+      {
+        "scene": "Rama's Marriage to Sita",
+        "description": "Rama participates in Sita's Swayamvara, where he lifts and breaks the divine bow of Shiva, winning her hand in marriage.",
+        "characters": ["Rama", "Sita", "Janaka", "Lakshmana", "Vishwamitra"],
+        "part": "Bala Kanda",
+        "image": "https://i.pinimg.com/564x/1f/bf/51/1fbf5175731f0122fbaef02d509595c1.jpg"
+      },
+      {
+        "scene": "Kaikeyi's Boons and Rama's Exile",
+        "description": "Queen Kaikeyi invokes two boons from King Dasharatha, exiling Rama to the forest for 14 years and placing her son Bharata on the throne.",
+        "characters": ["Kaikeyi", "Dasharatha", "Rama", "Sita", "Lakshmana"],
+        "part": "Ayodhya Kanda",
+        "image": "https://i.pinimg.com/564x/28/88/8a/28888aded99fa8323a72bb050a347c46.jpg"
+      },
+      {
+        "scene": "Forest Life and Shurpanakha's Attack",
+        "description": "Rama, Sita, and Lakshmana live peacefully in the forest until Shurpanakha, a demoness, tries to attack Sita. Lakshmana cuts off her nose.",
+        "characters": ["Rama", "Sita", "Lakshmana", "Shurpanakha"],
+        "part": "Aranya Kanda",
+        "image": "https://i.pinimg.com/564x/11/68/25/116825be8005e5f5808dac79c9d3c788.jpg"
+      },
+      {
+        "scene": "Sita's Abduction by Ravana",
+        "description": "Ravana, seeking revenge, disguises himself as a sage and abducts Sita while Rama and Lakshmana are away.",
+        "characters": ["Ravana", "Sita", "Jatayu"],
+        "part": "Aranya Kanda"
+        ,
+        "image": "https://i.pinimg.com/736x/bc/83/dc/bc83dcd64802d3c8004d2672fe8c32f4.jpg"
+      },
+      {
+        "scene": "Rama's Alliance with Sugriva",
+        "description": "Rama forms an alliance with the monkey king Sugriva, who promises to help find Sita in exchange for Rama's help in defeating his brother Vali.",
+        "characters": ["Rama", "Sugriva", "Hanuman", "Vali"],
+        "part": "Kishkindha Kanda",
+        "image": "https://i.pinimg.com/564x/8b/4d/f8/8b4df8a04f553a180aff6be16779ecd9.jpg"
+      },
+      {
+        "scene": "Hanuman's Journey to Lanka",
+        "description": "Hanuman crosses the ocean to reach Lanka, where he finds Sita in Ravana's captivity and assures her of Rama's rescue plan.",
+        "characters": ["Hanuman", "Sita", "Ravana"],
+        "part": "Sundara Kanda",
+        "image": "https://i.pinimg.com/736x/5e/73/24/5e7324fb3599d7eca853065c465a9fce.jpg"
+      },
+      {
+        "scene": "The Great War in Lanka",
+        "description": "Rama and his army of monkeys and bears wage a fierce battle against Ravana's forces to rescue Sita.",
+        "characters": ["Rama", "Lakshmana", "Hanuman", "Sugriva", "Ravana"],
+        "part": "Yuddha Kanda",
+        "image": "https://i.pinimg.com/564x/73/fd/bf/73fdbfea9ac81af3d74397756479b6b2.jpg"
+      },
+      {
+        "scene": "Rama Defeats Ravana",
+        "description": "In a climactic battle, Rama kills Ravana with the help of the celestial weapon Brahmastra, ending the war.",
+        "characters": ["Rama", "Ravana", "Vibhishana"],
+        "part": "Yuddha Kanda",
+        "image": "https://i.pinimg.com/736x/9e/a2/c1/9ea2c1d08ea58e2011d5b815ef933976.jpg"
+      },
+      {
+        "scene": "Return to Ayodhya",
+        "description": "After the victory in Lanka and Sita's rescue, Rama, Sita, and Lakshmana return to Ayodhya, where Rama is crowned king.",
+        "characters": ["Rama", "Sita", "Lakshmana", "Bharata", "Hanuman"],
+        "part": "Uttara Kanda",
+        "image": "https://i.pinimg.com/564x/0f/5f/75/0f5f751b2929d8c99cca843e93f424e1.jpg"
+      }
+    ]
+  }
+  
